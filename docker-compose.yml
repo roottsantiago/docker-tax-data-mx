@@ -1,0 +1,14 @@
+version: "3.5"
+
+services:
+  api:
+    build:
+      context: .
+      dockerfile: docker/Dockerfile
+    container_name: taxdatamx_api
+    #env_file:
+    #  - ".back.env"
+    volumes:
+      - .:/code
+    ports:
+      - "8000:8000"
