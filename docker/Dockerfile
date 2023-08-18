@@ -23,12 +23,12 @@ RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone
 
 # It copies the framework and the dependencies 
 # for the FastAPI application into the working directory
-COPY requirements.txt .
+COPY requirements-dev.txt .
 
 # It will install the framework and the dependencies
 # in the `requirements.txt` file.
 RUN pip install --upgrade pip
-RUN pip install --no-cache-dir -r requirements.txt
+RUN pip install --no-cache-dir -r requirements-dev.txt
 
 # It will copy the remaining files and the source code from the host
 # `fast-api` folder to the `app` container working directory
