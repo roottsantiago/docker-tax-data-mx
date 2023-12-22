@@ -42,6 +42,17 @@ docker-compose down
 $ docker build -t docker-tax-data-mx .
 ```
 
+> To run the Docker image, run the following:
+```bash
+$ docker run -it -p 8000:8000 docker-tax-data-mx
+```
+
+> To stop the Docker container:
+```bash
+$ docker ps
+$ docker stop <container-id>
+```
+
 ## Run with Docker Hub
 
 ### Download precreated image 
