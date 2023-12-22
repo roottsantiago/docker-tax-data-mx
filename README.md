@@ -1,7 +1,7 @@
 <h1 align='center'>Microservice that calculates tax data in México</h1>
 
 <div align='center'>
-    <img src=https://github.com/thomgonzalez/taxdatamx/blob/develop/docs/images/API.png> 
+    <img src=https://github.com/sutsantiago/docker-tax-data-mx/blob/main/docs/images/API.png> 
 </div>
 
 What are tax data?
@@ -56,7 +56,7 @@ $ docker stop <container-id>
 ## Run with Docker Hub
 
 ### Download precreated image 
-You can also just download the existing image from [DockerHub](https://hub.docker.com/r/sutsantiago/taxdatamx).
+You can also just download the existing image from [DockerHub](https://hub.docker.com/r/sutsantiago/docker-tax-data-mx).
 ```
 docker pull sutsantiago/taxdatamx
 ```
