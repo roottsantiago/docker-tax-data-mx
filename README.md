@@ -19,6 +19,10 @@ Tax data is the information that the Tax Administration Service has about you, s
 If you want to install the dependencies and work using Docker, you can simply follow this steps. 
 
 Clone the project repository
+```bash
+git clone https://github.com/sutsantiago/docker-tax-data-mx.git
+cd docker-tax-data-mx
+```
 
 ## Usage
 There are several ways to use the project because there are those using `docker-compose.yml` and `Dockerfile`. Here's how to use it:
@@ -35,7 +39,7 @@ docker-compose down
 
 > Section to install with Dockerfile
 ```
-$ docker build -t (name_image) .
+$ docker build -t docker-tax-data-mx .
 ```
 
 ## Run with Docker Hub
