@@ -40,7 +40,7 @@ EXPOSE 8000
 #It is the command that will start and run the FastAPI application container
 # CMD ["uvicorn", "main:app", "--host", "0.0.0.0"]
 
-COPY ./docker/docker-entrypoint.sh /docker-entrypoint.sh
+COPY ./docker-entrypoint.sh /docker-entrypoint.sh
 RUN chmod u+x /docker-entrypoint.sh
 
 ENTRYPOINT ["/docker-entrypoint.sh"]
