@@ -23,12 +23,12 @@ RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone
 
 # It copies the framework and the dependencies 
 # for the FastAPI application into the working directory
-COPY requirements-dev.txt .
+COPY requirements.txt .
 
 # It will install the framework and the dependencies
 # in the `requirements.txt` file.
 RUN pip install --upgrade pip
-RUN pip install --no-cache-dir -r requirements-dev.txt
+RUN pip install --no-cache-dir -r requirements.txt
 
 # It will copy the remaining files and the source code from the host
 # `fast-api` folder to the `app` container working directory
@@ -40,7 +40,7 @@ EXPOSE 8000
 #It is the command that will start and run the FastAPI application container
 # CMD ["uvicorn", "main:app", "--host", "0.0.0.0"]
 
-COPY ./docker/docker-entrypoint.sh /docker-entrypoint.sh
+COPY ./docker-entrypoint.sh /docker-entrypoint.sh
 RUN chmod u+x /docker-entrypoint.sh
 
 ENTRYPOINT ["/docker-entrypoint.sh"]
