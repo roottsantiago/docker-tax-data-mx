@@ -1,13 +1,11 @@
 version: "3.5"
 
 services:
-  api:
+  tax_data_mx:
     build:
       context: .
-      dockerfile: docker/Dockerfile
-    container_name: taxdatamx_api
-    #env_file:
-    #  - ".back.env"
+      dockerfile: Dockerfile
+    container_name: tax_data_mx_api
     volumes:
       - .:/code
     ports:
