@@ -1,7 +1,7 @@
 <h1 align='center'>Microservice that calculates tax data in México</h1>
 
 <div align='center'>
-    <img src=https://github.com/sutsantiago/docker-tax-data-mx/blob/main/docs/images/API.png> 
+    <img src=https://github.com/roottsantiago/docker-tax-data-mx/blob/main/docs/images/API.png> 
 </div>
 
 What are tax data?
@@ -13,7 +13,7 @@ Tax data is the information that the Tax Administration Service has about you, s
 - [`FastAPI`](https://fastapi.tiangolo.com/) - Web framework for building APIs with Python
 - [`Uvicorn`](https://www.uvicorn.org/)- Is an ASGI web server implementation for Python
 - [`Python`](https://www.python.org/downloads/release/python-380/) - Programming language widely used in web applications, software development, data science and machine learning (ML)
-- [`Pyfiscal`](https://github.com/sutsantiago/pyfiscal) - Library that calculates tax data
+- [`Pyfiscal`](https://github.com/roottsantiago/pyfiscal) - Library that calculates tax data
 
 ## Getting Started with Docker
 If you want to install the dependencies and work using Docker, you can simply follow this steps. 
@@ -70,4 +70,4 @@ $ docker run --name my-container -d -p 8000:8000 sutsantiago/taxdatamx
 Now visit http://localhost:8000
 
 ## LICENSE
-Distributed under the MIT License. See [`LICENSE`](https://github.com/sutsantiago/taxdatamx/blob/main/LICENSE) for more information
+Distributed under the MIT License. See [`LICENSE`](https://github.com/roottsantiago/taxdatamx/blob/main/LICENSE) for more information
