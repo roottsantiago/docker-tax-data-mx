@@ -58,13 +58,13 @@ $ docker stop <container-id>
 ### Download precreated image 
 You can also just download the existing image from [DockerHub](https://hub.docker.com/r/roottsantiago/docker-tax-data-mx).
 ```
-docker pull roottsantiago/taxdatamx
+docker pull roottsantiago/tax_data_mx
 ```
 
 ### Run the container
 Create a container from the image.
 ```
-$ docker run --name my-container -d -p 8000:8000 roottsantiago/taxdatamx
+$ docker run --name my-container -d -p 8000:8000 roottsantiago/tax_data_mx
 ```
 
 Now visit http://localhost:8000
