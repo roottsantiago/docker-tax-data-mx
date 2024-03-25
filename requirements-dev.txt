@@ -1,7 +1,7 @@
 fastapi==0.100.1
 uvicorn==0.23.2
 pydantic-settings==2.0.2
-pyfiscal==2.1
+pyfiscal==2.1.2
 black==23.3.0
 coverage==7.0.5
 httpx==0.23.3
