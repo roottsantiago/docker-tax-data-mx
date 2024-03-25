@@ -20,7 +20,7 @@ If you want to install the dependencies and work using Docker, you can simply fo
 
 Clone the project repository
 ```bash
-git clone https://github.com/sutsantiago/docker-tax-data-mx.git
+git clone https://github.com/roottsantiago/docker-tax-data-mx.git
 cd docker-tax-data-mx
 ```
 
@@ -56,15 +56,15 @@ $ docker stop <container-id>
 ## Run with Docker Hub
 
 ### Download precreated image 
-You can also just download the existing image from [DockerHub](https://hub.docker.com/r/sutsantiago/docker-tax-data-mx).
+You can also just download the existing image from [DockerHub](https://hub.docker.com/r/roottsantiago/docker-tax-data-mx).
 ```
-docker pull sutsantiago/taxdatamx
+docker pull roottsantiago/taxdatamx
 ```
 
 ### Run the container
 Create a container from the image.
 ```
-$ docker run --name my-container -d -p 8000:8000 sutsantiago/taxdatamx
+$ docker run --name my-container -d -p 8000:8000 roottsantiago/taxdatamx
 ```
 
 Now visit http://localhost:8000
